@@ -865,6 +865,13 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+.background {
+  background-image: url(/img/background-lg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
 .hero-img {
   background-position: center;
   background-size: cover;
@@ -1378,7 +1385,6 @@ table tr, table td {
 .hero-cta {
   padding-top: 6rem;
   text-align: center;
-  width: 75%;
   display: block;
   margin: 0 auto; }
 
@@ -1386,7 +1392,6 @@ table tr, table td {
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
-  line-height: 70px;
   padding-top: 2rem;
   color: #fff;
   -webkit-filter: drop-shadow(0px 2px 7px black);
@@ -1482,3 +1487,7 @@ table tr, table td {
     box-shadow: 0 0 0 #b40101;
     -webkit-transform: translateY(0rem);
     transform: translateY(0rem); }
+
+@media(max-width: 600px) {
+  .cta-title {
+    font-size: 20px; } }
